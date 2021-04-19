@@ -1,0 +1,766 @@
+1.2645 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+6.9358 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+8.4203 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001EE9EE7E550>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001EE9F10CBE0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.4208 	EXP 	window1: mouseVisible = True
+8.4209 	EXP 	window1: recordFrameIntervals = False
+8.5847 	EXP 	window1: recordFrameIntervals = True
+8.7682 	EXP 	window1: recordFrameIntervals = False
+8.9910 	EXP 	Sound sound_1 set volume 1.000
+9.4512 	EXP 	Created test_A = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='test_A', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='100ms A\n\n400ms N/A', units='height', win=Window(...), wrapWidth=1)
+9.4974 	EXP 	textbox: autoLog = True
+9.4974 	EXP 	textbox: autoDraw = True
+14.4825 	EXP 	Created sequence: random, trialTypes=1, nReps=250, seed=None
+14.4836 	EXP 	New trial (rep=0, index=0): None
+14.4912 	EXP 	textbox: autoDraw = False
+14.4912 	EXP 	test_A: autoDraw = True
+14.9703 	EXP 	New trial (rep=1, index=0): None
+14.9829 	EXP 	test_A: autoDraw = False
+14.9829 	EXP 	test_A: autoDraw = True
+15.4693 	EXP 	New trial (rep=2, index=0): None
+15.4824 	EXP 	test_A: autoDraw = False
+15.4824 	EXP 	test_A: autoDraw = True
+15.9689 	EXP 	New trial (rep=3, index=0): None
+15.9824 	EXP 	test_A: autoDraw = False
+15.9824 	EXP 	test_A: autoDraw = True
+16.4704 	EXP 	New trial (rep=4, index=0): None
+16.4822 	EXP 	test_A: autoDraw = False
+16.4822 	EXP 	test_A: autoDraw = True
+16.9687 	EXP 	New trial (rep=5, index=0): None
+16.9825 	EXP 	test_A: autoDraw = False
+16.9825 	EXP 	test_A: autoDraw = True
+17.4693 	EXP 	New trial (rep=6, index=0): None
+17.4818 	EXP 	test_A: autoDraw = False
+17.4818 	EXP 	test_A: autoDraw = True
+17.9683 	EXP 	New trial (rep=7, index=0): None
+17.9816 	EXP 	test_A: autoDraw = False
+17.9816 	EXP 	test_A: autoDraw = True
+18.4686 	EXP 	New trial (rep=8, index=0): None
+18.4816 	EXP 	test_A: autoDraw = False
+18.4816 	EXP 	test_A: autoDraw = True
+18.9691 	EXP 	New trial (rep=9, index=0): None
+18.9815 	EXP 	test_A: autoDraw = False
+18.9815 	EXP 	test_A: autoDraw = True
+19.4703 	EXP 	New trial (rep=10, index=0): None
+19.4823 	EXP 	test_A: autoDraw = False
+19.4823 	EXP 	test_A: autoDraw = True
+19.9677 	EXP 	New trial (rep=11, index=0): None
+19.9809 	EXP 	test_A: autoDraw = False
+19.9809 	EXP 	test_A: autoDraw = True
+20.4706 	EXP 	New trial (rep=12, index=0): None
+20.4812 	EXP 	test_A: autoDraw = False
+20.4812 	EXP 	test_A: autoDraw = True
+20.9703 	EXP 	New trial (rep=13, index=0): None
+20.9810 	EXP 	test_A: autoDraw = False
+20.9810 	EXP 	test_A: autoDraw = True
+21.4695 	EXP 	New trial (rep=14, index=0): None
+21.4815 	EXP 	test_A: autoDraw = False
+21.4815 	EXP 	test_A: autoDraw = True
+21.9674 	EXP 	New trial (rep=15, index=0): None
+21.9802 	EXP 	test_A: autoDraw = False
+21.9802 	EXP 	test_A: autoDraw = True
+22.4673 	EXP 	New trial (rep=16, index=0): None
+22.4805 	EXP 	test_A: autoDraw = False
+22.4805 	EXP 	test_A: autoDraw = True
+22.9676 	EXP 	New trial (rep=17, index=0): None
+22.9798 	EXP 	test_A: autoDraw = False
+22.9798 	EXP 	test_A: autoDraw = True
+23.4710 	EXP 	New trial (rep=18, index=0): None
+23.4817 	EXP 	test_A: autoDraw = False
+23.4817 	EXP 	test_A: autoDraw = True
+23.9674 	EXP 	New trial (rep=19, index=0): None
+23.9797 	EXP 	test_A: autoDraw = False
+23.9797 	EXP 	test_A: autoDraw = True
+24.4676 	EXP 	New trial (rep=20, index=0): None
+24.4793 	EXP 	test_A: autoDraw = False
+24.4793 	EXP 	test_A: autoDraw = True
+24.9666 	EXP 	New trial (rep=21, index=0): None
+24.9791 	EXP 	test_A: autoDraw = False
+24.9791 	EXP 	test_A: autoDraw = True
+25.4662 	EXP 	New trial (rep=22, index=0): None
+25.4791 	EXP 	test_A: autoDraw = False
+25.4791 	EXP 	test_A: autoDraw = True
+25.9781 	EXP 	New trial (rep=23, index=0): None
+25.9885 	EXP 	test_A: autoDraw = False
+25.9885 	EXP 	test_A: autoDraw = True
+26.4660 	EXP 	New trial (rep=24, index=0): None
+26.4787 	EXP 	test_A: autoDraw = False
+26.4787 	EXP 	test_A: autoDraw = True
+26.9660 	EXP 	New trial (rep=25, index=0): None
+26.9788 	EXP 	test_A: autoDraw = False
+26.9788 	EXP 	test_A: autoDraw = True
+27.4659 	EXP 	New trial (rep=26, index=0): None
+27.4786 	EXP 	test_A: autoDraw = False
+27.4786 	EXP 	test_A: autoDraw = True
+27.9675 	EXP 	New trial (rep=27, index=0): None
+27.9785 	EXP 	test_A: autoDraw = False
+27.9785 	EXP 	test_A: autoDraw = True
+28.4677 	EXP 	New trial (rep=28, index=0): None
+28.4783 	EXP 	test_A: autoDraw = False
+28.4783 	EXP 	test_A: autoDraw = True
+28.9662 	EXP 	New trial (rep=29, index=0): None
+28.9780 	EXP 	test_A: autoDraw = False
+28.9780 	EXP 	test_A: autoDraw = True
+29.4648 	EXP 	New trial (rep=30, index=0): None
+29.4777 	EXP 	test_A: autoDraw = False
+29.4777 	EXP 	test_A: autoDraw = True
+29.9663 	EXP 	New trial (rep=31, index=0): None
+29.9778 	EXP 	test_A: autoDraw = False
+29.9778 	EXP 	test_A: autoDraw = True
+30.4775 	EXP 	New trial (rep=32, index=0): None
+30.4887 	EXP 	test_A: autoDraw = False
+30.4887 	EXP 	test_A: autoDraw = True
+30.9641 	EXP 	New trial (rep=33, index=0): None
+30.9772 	EXP 	test_A: autoDraw = False
+30.9772 	EXP 	test_A: autoDraw = True
+31.4651 	EXP 	New trial (rep=34, index=0): None
+31.4771 	EXP 	test_A: autoDraw = False
+31.4771 	EXP 	test_A: autoDraw = True
+31.9658 	EXP 	New trial (rep=35, index=0): None
+31.9772 	EXP 	test_A: autoDraw = False
+31.9772 	EXP 	test_A: autoDraw = True
+32.4643 	EXP 	New trial (rep=36, index=0): None
+32.4768 	EXP 	test_A: autoDraw = False
+32.4768 	EXP 	test_A: autoDraw = True
+32.9641 	EXP 	New trial (rep=37, index=0): None
+32.9765 	EXP 	test_A: autoDraw = False
+32.9765 	EXP 	test_A: autoDraw = True
+33.4635 	EXP 	New trial (rep=38, index=0): None
+33.4761 	EXP 	test_A: autoDraw = False
+33.4761 	EXP 	test_A: autoDraw = True
+33.9645 	EXP 	New trial (rep=39, index=0): None
+33.9761 	EXP 	test_A: autoDraw = False
+33.9761 	EXP 	test_A: autoDraw = True
+34.4646 	EXP 	New trial (rep=40, index=0): None
+34.4758 	EXP 	test_A: autoDraw = False
+34.4758 	EXP 	test_A: autoDraw = True
+34.9628 	EXP 	New trial (rep=41, index=0): None
+34.9758 	EXP 	test_A: autoDraw = False
+34.9758 	EXP 	test_A: autoDraw = True
+35.4638 	EXP 	New trial (rep=42, index=0): None
+35.4756 	EXP 	test_A: autoDraw = False
+35.4756 	EXP 	test_A: autoDraw = True
+35.9630 	EXP 	New trial (rep=43, index=0): None
+35.9755 	EXP 	test_A: autoDraw = False
+35.9755 	EXP 	test_A: autoDraw = True
+36.4656 	EXP 	New trial (rep=44, index=0): None
+36.4772 	EXP 	test_A: autoDraw = False
+36.4772 	EXP 	test_A: autoDraw = True
+36.9635 	EXP 	New trial (rep=45, index=0): None
+36.9751 	EXP 	test_A: autoDraw = False
+36.9751 	EXP 	test_A: autoDraw = True
+37.4632 	EXP 	New trial (rep=46, index=0): None
+37.4752 	EXP 	test_A: autoDraw = False
+37.4752 	EXP 	test_A: autoDraw = True
+37.9638 	EXP 	New trial (rep=47, index=0): None
+37.9750 	EXP 	test_A: autoDraw = False
+37.9750 	EXP 	test_A: autoDraw = True
+38.4627 	EXP 	New trial (rep=48, index=0): None
+38.4745 	EXP 	test_A: autoDraw = False
+38.4745 	EXP 	test_A: autoDraw = True
+38.9618 	EXP 	New trial (rep=49, index=0): None
+38.9745 	EXP 	test_A: autoDraw = False
+38.9745 	EXP 	test_A: autoDraw = True
+39.4647 	EXP 	New trial (rep=50, index=0): None
+39.4752 	EXP 	test_A: autoDraw = False
+39.4752 	EXP 	test_A: autoDraw = True
+39.9622 	EXP 	New trial (rep=51, index=0): None
+39.9741 	EXP 	test_A: autoDraw = False
+39.9741 	EXP 	test_A: autoDraw = True
+40.4606 	EXP 	New trial (rep=52, index=0): None
+40.4738 	EXP 	test_A: autoDraw = False
+40.4738 	EXP 	test_A: autoDraw = True
+40.9611 	EXP 	New trial (rep=53, index=0): None
+40.9736 	EXP 	test_A: autoDraw = False
+40.9736 	EXP 	test_A: autoDraw = True
+41.4604 	EXP 	New trial (rep=54, index=0): None
+41.4736 	EXP 	test_A: autoDraw = False
+41.4736 	EXP 	test_A: autoDraw = True
+41.9601 	EXP 	New trial (rep=55, index=0): None
+41.9733 	EXP 	test_A: autoDraw = False
+41.9733 	EXP 	test_A: autoDraw = True
+42.4639 	EXP 	New trial (rep=56, index=0): None
+42.4740 	EXP 	test_A: autoDraw = False
+42.4740 	EXP 	test_A: autoDraw = True
+42.9609 	EXP 	New trial (rep=57, index=0): None
+42.9732 	EXP 	test_A: autoDraw = False
+42.9732 	EXP 	test_A: autoDraw = True
+43.4599 	EXP 	New trial (rep=58, index=0): None
+43.4730 	EXP 	test_A: autoDraw = False
+43.4730 	EXP 	test_A: autoDraw = True
+43.9595 	EXP 	New trial (rep=59, index=0): None
+43.9727 	EXP 	test_A: autoDraw = False
+43.9727 	EXP 	test_A: autoDraw = True
+44.4604 	EXP 	New trial (rep=60, index=0): None
+44.4727 	EXP 	test_A: autoDraw = False
+44.4727 	EXP 	test_A: autoDraw = True
+44.9591 	EXP 	New trial (rep=61, index=0): None
+44.9725 	EXP 	test_A: autoDraw = False
+44.9725 	EXP 	test_A: autoDraw = True
+45.4593 	EXP 	New trial (rep=62, index=0): None
+45.4721 	EXP 	test_A: autoDraw = False
+45.4721 	EXP 	test_A: autoDraw = True
+45.9591 	EXP 	New trial (rep=63, index=0): None
+45.9720 	EXP 	test_A: autoDraw = False
+45.9720 	EXP 	test_A: autoDraw = True
+46.4586 	EXP 	New trial (rep=64, index=0): None
+46.4721 	EXP 	test_A: autoDraw = False
+46.4721 	EXP 	test_A: autoDraw = True
+46.9590 	EXP 	New trial (rep=65, index=0): None
+46.9720 	EXP 	test_A: autoDraw = False
+46.9720 	EXP 	test_A: autoDraw = True
+47.4604 	EXP 	New trial (rep=66, index=0): None
+47.4717 	EXP 	test_A: autoDraw = False
+47.4717 	EXP 	test_A: autoDraw = True
+47.9581 	EXP 	New trial (rep=67, index=0): None
+47.9713 	EXP 	test_A: autoDraw = False
+47.9713 	EXP 	test_A: autoDraw = True
+48.4594 	EXP 	New trial (rep=68, index=0): None
+48.4720 	EXP 	test_A: autoDraw = False
+48.4720 	EXP 	test_A: autoDraw = True
+48.9580 	EXP 	New trial (rep=69, index=0): None
+48.9709 	EXP 	test_A: autoDraw = False
+48.9709 	EXP 	test_A: autoDraw = True
+49.4578 	EXP 	New trial (rep=70, index=0): None
+49.4714 	EXP 	test_A: autoDraw = False
+49.4714 	EXP 	test_A: autoDraw = True
+49.9578 	EXP 	New trial (rep=71, index=0): None
+49.9705 	EXP 	test_A: autoDraw = False
+49.9705 	EXP 	test_A: autoDraw = True
+50.4585 	EXP 	New trial (rep=72, index=0): None
+50.4707 	EXP 	test_A: autoDraw = False
+50.4707 	EXP 	test_A: autoDraw = True
+50.9584 	EXP 	New trial (rep=73, index=0): None
+50.9705 	EXP 	test_A: autoDraw = False
+50.9705 	EXP 	test_A: autoDraw = True
+51.4576 	EXP 	New trial (rep=74, index=0): None
+51.4702 	EXP 	test_A: autoDraw = False
+51.4702 	EXP 	test_A: autoDraw = True
+51.9683 	EXP 	New trial (rep=75, index=0): None
+51.9787 	EXP 	test_A: autoDraw = False
+51.9787 	EXP 	test_A: autoDraw = True
+52.4576 	EXP 	New trial (rep=76, index=0): None
+52.4700 	EXP 	test_A: autoDraw = False
+52.4700 	EXP 	test_A: autoDraw = True
+52.9569 	EXP 	New trial (rep=77, index=0): None
+52.9701 	EXP 	test_A: autoDraw = False
+52.9701 	EXP 	test_A: autoDraw = True
+53.4570 	EXP 	New trial (rep=78, index=0): None
+53.4695 	EXP 	test_A: autoDraw = False
+53.4695 	EXP 	test_A: autoDraw = True
+53.9568 	EXP 	New trial (rep=79, index=0): None
+53.9694 	EXP 	test_A: autoDraw = False
+53.9694 	EXP 	test_A: autoDraw = True
+54.4568 	EXP 	New trial (rep=80, index=0): None
+54.4692 	EXP 	test_A: autoDraw = False
+54.4692 	EXP 	test_A: autoDraw = True
+54.9568 	EXP 	New trial (rep=81, index=0): None
+54.9691 	EXP 	test_A: autoDraw = False
+54.9691 	EXP 	test_A: autoDraw = True
+55.4561 	EXP 	New trial (rep=82, index=0): None
+55.4688 	EXP 	test_A: autoDraw = False
+55.4688 	EXP 	test_A: autoDraw = True
+55.9558 	EXP 	New trial (rep=83, index=0): None
+55.9686 	EXP 	test_A: autoDraw = False
+55.9686 	EXP 	test_A: autoDraw = True
+56.4560 	EXP 	New trial (rep=84, index=0): None
+56.4684 	EXP 	test_A: autoDraw = False
+56.4684 	EXP 	test_A: autoDraw = True
+56.9564 	EXP 	New trial (rep=85, index=0): None
+56.9683 	EXP 	test_A: autoDraw = False
+56.9683 	EXP 	test_A: autoDraw = True
+57.4553 	EXP 	New trial (rep=86, index=0): None
+57.4681 	EXP 	test_A: autoDraw = False
+57.4681 	EXP 	test_A: autoDraw = True
+57.9552 	EXP 	New trial (rep=87, index=0): None
+57.9679 	EXP 	test_A: autoDraw = False
+57.9679 	EXP 	test_A: autoDraw = True
+58.4557 	EXP 	New trial (rep=88, index=0): None
+58.4679 	EXP 	test_A: autoDraw = False
+58.4679 	EXP 	test_A: autoDraw = True
+58.9567 	EXP 	New trial (rep=89, index=0): None
+58.9676 	EXP 	test_A: autoDraw = False
+58.9676 	EXP 	test_A: autoDraw = False
+58.9676 	EXP 	test_A: autoDraw = True
+59.4677 	EXP 	New trial (rep=90, index=0): None
+59.4800 	EXP 	test_A: autoDraw = False
+59.4800 	EXP 	test_A: autoDraw = True
+59.9727 	EXP 	New trial (rep=91, index=0): None
+59.9840 	EXP 	test_A: autoDraw = False
+59.9840 	EXP 	test_A: autoDraw = True
+60.4712 	EXP 	New trial (rep=92, index=0): None
+60.4841 	EXP 	test_A: autoDraw = False
+60.4841 	EXP 	test_A: autoDraw = True
+60.9708 	EXP 	New trial (rep=93, index=0): None
+60.9835 	EXP 	test_A: autoDraw = False
+60.9835 	EXP 	test_A: autoDraw = True
+61.4712 	EXP 	New trial (rep=94, index=0): None
+61.4836 	EXP 	test_A: autoDraw = False
+61.4836 	EXP 	test_A: autoDraw = True
+61.9718 	EXP 	New trial (rep=95, index=0): None
+61.9834 	EXP 	test_A: autoDraw = False
+61.9834 	EXP 	test_A: autoDraw = True
+62.4721 	EXP 	New trial (rep=96, index=0): None
+62.4830 	EXP 	test_A: autoDraw = False
+62.4830 	EXP 	test_A: autoDraw = True
+62.9702 	EXP 	New trial (rep=97, index=0): None
+62.9830 	EXP 	test_A: autoDraw = False
+62.9830 	EXP 	test_A: autoDraw = True
+63.4715 	EXP 	New trial (rep=98, index=0): None
+63.4831 	EXP 	test_A: autoDraw = False
+63.4831 	EXP 	test_A: autoDraw = True
+63.9720 	EXP 	New trial (rep=99, index=0): None
+63.9830 	EXP 	test_A: autoDraw = False
+63.9830 	EXP 	test_A: autoDraw = True
+64.4716 	EXP 	New trial (rep=100, index=0): None
+64.4828 	EXP 	test_A: autoDraw = False
+64.4828 	EXP 	test_A: autoDraw = True
+64.9694 	EXP 	New trial (rep=101, index=0): None
+64.9823 	EXP 	test_A: autoDraw = False
+64.9823 	EXP 	test_A: autoDraw = True
+65.4707 	EXP 	New trial (rep=102, index=0): None
+65.4823 	EXP 	test_A: autoDraw = False
+65.4823 	EXP 	test_A: autoDraw = True
+65.9760 	EXP 	New trial (rep=103, index=0): None
+65.9865 	EXP 	test_A: autoDraw = False
+65.9865 	EXP 	test_A: autoDraw = True
+66.4707 	EXP 	New trial (rep=104, index=0): None
+66.4819 	EXP 	test_A: autoDraw = False
+66.4819 	EXP 	test_A: autoDraw = True
+66.9687 	EXP 	New trial (rep=105, index=0): None
+66.9830 	EXP 	test_A: autoDraw = False
+66.9830 	EXP 	test_A: autoDraw = True
+67.4686 	EXP 	New trial (rep=106, index=0): None
+67.4815 	EXP 	test_A: autoDraw = False
+67.4815 	EXP 	test_A: autoDraw = True
+67.9697 	EXP 	New trial (rep=107, index=0): None
+67.9815 	EXP 	test_A: autoDraw = False
+67.9815 	EXP 	test_A: autoDraw = True
+68.4705 	EXP 	New trial (rep=108, index=0): None
+68.4814 	EXP 	test_A: autoDraw = False
+68.4814 	EXP 	test_A: autoDraw = True
+68.9679 	EXP 	New trial (rep=109, index=0): None
+68.9814 	EXP 	test_A: autoDraw = False
+68.9814 	EXP 	test_A: autoDraw = True
+69.4681 	EXP 	New trial (rep=110, index=0): None
+69.4812 	EXP 	test_A: autoDraw = False
+69.4812 	EXP 	test_A: autoDraw = True
+69.9709 	EXP 	New trial (rep=111, index=0): None
+69.9810 	EXP 	test_A: autoDraw = False
+69.9810 	EXP 	test_A: autoDraw = True
+70.4704 	EXP 	New trial (rep=112, index=0): None
+70.4820 	EXP 	test_A: autoDraw = False
+70.4820 	EXP 	test_A: autoDraw = True
+70.9670 	EXP 	New trial (rep=113, index=0): None
+70.9806 	EXP 	test_A: autoDraw = False
+70.9806 	EXP 	test_A: autoDraw = True
+71.4669 	EXP 	New trial (rep=114, index=0): None
+71.4800 	EXP 	test_A: autoDraw = False
+71.4800 	EXP 	test_A: autoDraw = True
+71.9665 	EXP 	New trial (rep=115, index=0): None
+71.9799 	EXP 	test_A: autoDraw = False
+71.9799 	EXP 	test_A: autoDraw = True
+72.4671 	EXP 	New trial (rep=116, index=0): None
+72.4796 	EXP 	test_A: autoDraw = False
+72.4796 	EXP 	test_A: autoDraw = True
+72.9664 	EXP 	New trial (rep=117, index=0): None
+72.9794 	EXP 	test_A: autoDraw = False
+72.9794 	EXP 	test_A: autoDraw = True
+73.4675 	EXP 	New trial (rep=118, index=0): None
+73.4795 	EXP 	test_A: autoDraw = False
+73.4795 	EXP 	test_A: autoDraw = True
+73.9663 	EXP 	New trial (rep=119, index=0): None
+73.9795 	EXP 	test_A: autoDraw = False
+73.9795 	EXP 	test_A: autoDraw = True
+74.4691 	EXP 	New trial (rep=120, index=0): None
+74.4807 	EXP 	test_A: autoDraw = False
+74.4807 	EXP 	test_A: autoDraw = True
+74.9662 	EXP 	New trial (rep=121, index=0): None
+74.9789 	EXP 	test_A: autoDraw = False
+74.9789 	EXP 	test_A: autoDraw = True
+75.4662 	EXP 	New trial (rep=122, index=0): None
+75.4787 	EXP 	test_A: autoDraw = False
+75.4787 	EXP 	test_A: autoDraw = True
+75.9722 	EXP 	New trial (rep=123, index=0): None
+75.9820 	EXP 	test_A: autoDraw = False
+75.9820 	EXP 	test_A: autoDraw = True
+76.4650 	EXP 	New trial (rep=124, index=0): None
+76.4782 	EXP 	test_A: autoDraw = False
+76.4782 	EXP 	test_A: autoDraw = True
+76.9665 	EXP 	New trial (rep=125, index=0): None
+76.9783 	EXP 	test_A: autoDraw = False
+76.9783 	EXP 	test_A: autoDraw = True
+77.4651 	EXP 	New trial (rep=126, index=0): None
+77.4780 	EXP 	test_A: autoDraw = False
+77.4780 	EXP 	test_A: autoDraw = True
+77.9664 	EXP 	New trial (rep=127, index=0): None
+77.9781 	EXP 	test_A: autoDraw = False
+77.9781 	EXP 	test_A: autoDraw = True
+78.4675 	EXP 	New trial (rep=128, index=0): None
+78.4778 	EXP 	test_A: autoDraw = False
+78.4778 	EXP 	test_A: autoDraw = True
+78.9658 	EXP 	New trial (rep=129, index=0): None
+78.9781 	EXP 	test_A: autoDraw = False
+78.9781 	EXP 	test_A: autoDraw = True
+79.4646 	EXP 	New trial (rep=130, index=0): None
+79.4777 	EXP 	test_A: autoDraw = False
+79.4777 	EXP 	test_A: autoDraw = True
+79.9652 	EXP 	New trial (rep=131, index=0): None
+79.9772 	EXP 	test_A: autoDraw = False
+79.9772 	EXP 	test_A: autoDraw = True
+80.4648 	EXP 	New trial (rep=132, index=0): None
+80.4771 	EXP 	test_A: autoDraw = False
+80.4771 	EXP 	test_A: autoDraw = True
+80.9638 	EXP 	New trial (rep=133, index=0): None
+80.9771 	EXP 	test_A: autoDraw = False
+80.9771 	EXP 	test_A: autoDraw = True
+81.4633 	EXP 	New trial (rep=134, index=0): None
+81.4766 	EXP 	test_A: autoDraw = False
+81.4766 	EXP 	test_A: autoDraw = True
+81.9640 	EXP 	New trial (rep=135, index=0): None
+81.9765 	EXP 	test_A: autoDraw = False
+81.9765 	EXP 	test_A: autoDraw = True
+82.4642 	EXP 	New trial (rep=136, index=0): None
+82.4766 	EXP 	test_A: autoDraw = False
+82.4766 	EXP 	test_A: autoDraw = True
+82.9637 	EXP 	New trial (rep=137, index=0): None
+82.9760 	EXP 	test_A: autoDraw = False
+82.9760 	EXP 	test_A: autoDraw = True
+83.4639 	EXP 	New trial (rep=138, index=0): None
+83.4759 	EXP 	test_A: autoDraw = False
+83.4759 	EXP 	test_A: autoDraw = True
+83.9635 	EXP 	New trial (rep=139, index=0): None
+83.9759 	EXP 	test_A: autoDraw = False
+83.9759 	EXP 	test_A: autoDraw = True
+84.4633 	EXP 	New trial (rep=140, index=0): None
+84.4757 	EXP 	test_A: autoDraw = False
+84.4757 	EXP 	test_A: autoDraw = True
+84.9629 	EXP 	New trial (rep=141, index=0): None
+84.9756 	EXP 	test_A: autoDraw = False
+84.9756 	EXP 	test_A: autoDraw = True
+85.4624 	EXP 	New trial (rep=142, index=0): None
+85.4753 	EXP 	test_A: autoDraw = False
+85.4753 	EXP 	test_A: autoDraw = True
+85.9623 	EXP 	New trial (rep=143, index=0): None
+85.9751 	EXP 	test_A: autoDraw = False
+85.9751 	EXP 	test_A: autoDraw = True
+86.4621 	EXP 	New trial (rep=144, index=0): None
+86.4748 	EXP 	test_A: autoDraw = False
+86.4748 	EXP 	test_A: autoDraw = True
+86.9619 	EXP 	New trial (rep=145, index=0): None
+86.9748 	EXP 	test_A: autoDraw = False
+86.9748 	EXP 	test_A: autoDraw = True
+87.4620 	EXP 	New trial (rep=146, index=0): None
+87.4748 	EXP 	test_A: autoDraw = False
+87.4748 	EXP 	test_A: autoDraw = True
+87.9622 	EXP 	New trial (rep=147, index=0): None
+87.9743 	EXP 	test_A: autoDraw = False
+87.9743 	EXP 	test_A: autoDraw = True
+88.4612 	EXP 	New trial (rep=148, index=0): None
+88.4749 	EXP 	test_A: autoDraw = False
+88.4749 	EXP 	test_A: autoDraw = True
+88.9611 	EXP 	New trial (rep=149, index=0): None
+88.9741 	EXP 	test_A: autoDraw = False
+88.9741 	EXP 	test_A: autoDraw = True
+89.4639 	EXP 	New trial (rep=150, index=0): None
+89.4738 	EXP 	test_A: autoDraw = False
+89.4738 	EXP 	test_A: autoDraw = True
+89.9607 	EXP 	New trial (rep=151, index=0): None
+89.9742 	EXP 	test_A: autoDraw = False
+89.9742 	EXP 	test_A: autoDraw = True
+90.4611 	EXP 	New trial (rep=152, index=0): None
+90.4734 	EXP 	test_A: autoDraw = False
+90.4734 	EXP 	test_A: autoDraw = True
+90.9613 	EXP 	New trial (rep=153, index=0): None
+90.9735 	EXP 	test_A: autoDraw = False
+90.9735 	EXP 	test_A: autoDraw = True
+91.4607 	EXP 	New trial (rep=154, index=0): None
+91.4734 	EXP 	test_A: autoDraw = False
+91.4734 	EXP 	test_A: autoDraw = True
+91.9605 	EXP 	New trial (rep=155, index=0): None
+91.9733 	EXP 	test_A: autoDraw = False
+91.9733 	EXP 	test_A: autoDraw = True
+92.4603 	EXP 	New trial (rep=156, index=0): None
+92.4727 	EXP 	test_A: autoDraw = False
+92.4727 	EXP 	test_A: autoDraw = True
+92.9593 	EXP 	New trial (rep=157, index=0): None
+92.9728 	EXP 	test_A: autoDraw = False
+92.9728 	EXP 	test_A: autoDraw = True
+93.4593 	EXP 	New trial (rep=158, index=0): None
+93.4731 	EXP 	test_A: autoDraw = False
+93.4731 	EXP 	test_A: autoDraw = True
+93.9602 	EXP 	New trial (rep=159, index=0): None
+93.9725 	EXP 	test_A: autoDraw = False
+93.9725 	EXP 	test_A: autoDraw = True
+94.4591 	EXP 	New trial (rep=160, index=0): None
+94.4723 	EXP 	test_A: autoDraw = False
+94.4723 	EXP 	test_A: autoDraw = True
+94.9588 	EXP 	New trial (rep=161, index=0): None
+94.9721 	EXP 	test_A: autoDraw = False
+94.9721 	EXP 	test_A: autoDraw = True
+95.4591 	EXP 	New trial (rep=162, index=0): None
+95.4720 	EXP 	test_A: autoDraw = False
+95.4720 	EXP 	test_A: autoDraw = True
+95.9600 	EXP 	New trial (rep=163, index=0): None
+95.9719 	EXP 	test_A: autoDraw = False
+95.9719 	EXP 	test_A: autoDraw = True
+96.4594 	EXP 	New trial (rep=164, index=0): None
+96.4724 	EXP 	test_A: autoDraw = False
+96.4724 	EXP 	test_A: autoDraw = True
+96.9584 	EXP 	New trial (rep=165, index=0): None
+96.9714 	EXP 	test_A: autoDraw = False
+96.9714 	EXP 	test_A: autoDraw = True
+97.4602 	EXP 	New trial (rep=166, index=0): None
+97.4715 	EXP 	test_A: autoDraw = False
+97.4715 	EXP 	test_A: autoDraw = True
+97.9584 	EXP 	New trial (rep=167, index=0): None
+97.9712 	EXP 	test_A: autoDraw = False
+97.9712 	EXP 	test_A: autoDraw = True
+98.4583 	EXP 	New trial (rep=168, index=0): None
+98.4709 	EXP 	test_A: autoDraw = False
+98.4709 	EXP 	test_A: autoDraw = True
+98.9669 	EXP 	New trial (rep=169, index=0): None
+98.9752 	EXP 	test_A: autoDraw = False
+98.9752 	EXP 	test_A: autoDraw = True
+99.4583 	EXP 	New trial (rep=170, index=0): None
+99.4708 	EXP 	test_A: autoDraw = False
+99.4708 	EXP 	test_A: autoDraw = True
+99.9570 	EXP 	New trial (rep=171, index=0): None
+99.9703 	EXP 	test_A: autoDraw = False
+99.9703 	EXP 	test_A: autoDraw = True
+100.4598 	EXP 	New trial (rep=172, index=0): None
+100.4713 	EXP 	test_A: autoDraw = False
+100.4713 	EXP 	test_A: autoDraw = True
+100.9570 	EXP 	New trial (rep=173, index=0): None
+100.9709 	EXP 	test_A: autoDraw = False
+100.9709 	EXP 	test_A: autoDraw = True
+101.4577 	EXP 	New trial (rep=174, index=0): None
+101.4699 	EXP 	test_A: autoDraw = False
+101.4699 	EXP 	test_A: autoDraw = True
+101.9591 	EXP 	New trial (rep=175, index=0): None
+101.9699 	EXP 	test_A: autoDraw = False
+101.9699 	EXP 	test_A: autoDraw = True
+102.4571 	EXP 	New trial (rep=176, index=0): None
+102.4696 	EXP 	test_A: autoDraw = False
+102.4696 	EXP 	test_A: autoDraw = True
+102.9564 	EXP 	New trial (rep=177, index=0): None
+102.9697 	EXP 	test_A: autoDraw = False
+102.9697 	EXP 	test_A: autoDraw = True
+103.4563 	EXP 	New trial (rep=178, index=0): None
+103.4692 	EXP 	test_A: autoDraw = False
+103.4692 	EXP 	test_A: autoDraw = True
+103.9575 	EXP 	New trial (rep=179, index=0): None
+103.9693 	EXP 	test_A: autoDraw = False
+103.9693 	EXP 	test_A: autoDraw = True
+104.4575 	EXP 	New trial (rep=180, index=0): None
+104.4691 	EXP 	test_A: autoDraw = False
+104.4691 	EXP 	test_A: autoDraw = True
+104.9573 	EXP 	New trial (rep=181, index=0): None
+104.9689 	EXP 	test_A: autoDraw = False
+104.9689 	EXP 	test_A: autoDraw = True
+105.4566 	EXP 	New trial (rep=182, index=0): None
+105.4687 	EXP 	test_A: autoDraw = False
+105.4687 	EXP 	test_A: autoDraw = True
+105.9565 	EXP 	New trial (rep=183, index=0): None
+105.9685 	EXP 	test_A: autoDraw = False
+105.9685 	EXP 	test_A: autoDraw = True
+106.4551 	EXP 	New trial (rep=184, index=0): None
+106.4683 	EXP 	test_A: autoDraw = False
+106.4683 	EXP 	test_A: autoDraw = True
+106.9572 	EXP 	New trial (rep=185, index=0): None
+106.9684 	EXP 	test_A: autoDraw = False
+106.9684 	EXP 	test_A: autoDraw = True
+107.4554 	EXP 	New trial (rep=186, index=0): None
+107.4678 	EXP 	test_A: autoDraw = False
+107.4678 	EXP 	test_A: autoDraw = True
+107.9565 	EXP 	New trial (rep=187, index=0): None
+107.9677 	EXP 	test_A: autoDraw = False
+107.9677 	EXP 	test_A: autoDraw = False
+107.9677 	EXP 	test_A: autoDraw = True
+108.4600 	EXP 	New trial (rep=188, index=0): None
+108.4688 	EXP 	test_A: autoDraw = False
+108.4688 	EXP 	test_A: autoDraw = True
+108.9723 	EXP 	New trial (rep=189, index=0): None
+108.9844 	EXP 	test_A: autoDraw = False
+108.9844 	EXP 	test_A: autoDraw = True
+109.4734 	EXP 	New trial (rep=190, index=0): None
+109.4841 	EXP 	test_A: autoDraw = False
+109.4841 	EXP 	test_A: autoDraw = True
+109.9806 	EXP 	New trial (rep=191, index=0): None
+109.9901 	EXP 	test_A: autoDraw = False
+109.9901 	EXP 	test_A: autoDraw = True
+110.4709 	EXP 	New trial (rep=192, index=0): None
+110.4834 	EXP 	test_A: autoDraw = False
+110.4834 	EXP 	test_A: autoDraw = True
+110.9723 	EXP 	New trial (rep=193, index=0): None
+110.9834 	EXP 	test_A: autoDraw = False
+110.9834 	EXP 	test_A: autoDraw = True
+111.4718 	EXP 	New trial (rep=194, index=0): None
+111.4835 	EXP 	test_A: autoDraw = False
+111.4835 	EXP 	test_A: autoDraw = True
+111.9720 	EXP 	New trial (rep=195, index=0): None
+111.9833 	EXP 	test_A: autoDraw = False
+111.9833 	EXP 	test_A: autoDraw = True
+112.4737 	EXP 	New trial (rep=196, index=0): None
+112.4844 	EXP 	test_A: autoDraw = False
+112.4844 	EXP 	test_A: autoDraw = True
+112.9705 	EXP 	New trial (rep=197, index=0): None
+112.9827 	EXP 	test_A: autoDraw = False
+112.9827 	EXP 	test_A: autoDraw = True
+113.4697 	EXP 	New trial (rep=198, index=0): None
+113.4824 	EXP 	test_A: autoDraw = False
+113.4824 	EXP 	test_A: autoDraw = True
+113.9710 	EXP 	New trial (rep=199, index=0): None
+113.9826 	EXP 	test_A: autoDraw = False
+113.9826 	EXP 	test_A: autoDraw = True
+114.4702 	EXP 	New trial (rep=200, index=0): None
+114.4824 	EXP 	test_A: autoDraw = False
+114.4824 	EXP 	test_A: autoDraw = True
+114.9700 	EXP 	New trial (rep=201, index=0): None
+114.9820 	EXP 	test_A: autoDraw = False
+114.9820 	EXP 	test_A: autoDraw = True
+115.4692 	EXP 	New trial (rep=202, index=0): None
+115.4817 	EXP 	test_A: autoDraw = False
+115.4817 	EXP 	test_A: autoDraw = True
+115.9683 	EXP 	New trial (rep=203, index=0): None
+115.9817 	EXP 	test_A: autoDraw = False
+115.9817 	EXP 	test_A: autoDraw = True
+116.4680 	EXP 	New trial (rep=204, index=0): None
+116.4820 	EXP 	test_A: autoDraw = False
+116.4820 	EXP 	test_A: autoDraw = True
+116.9690 	EXP 	New trial (rep=205, index=0): None
+116.9813 	EXP 	test_A: autoDraw = False
+116.9813 	EXP 	test_A: autoDraw = True
+117.4703 	EXP 	New trial (rep=206, index=0): None
+117.4814 	EXP 	test_A: autoDraw = False
+117.4814 	EXP 	test_A: autoDraw = True
+117.9679 	EXP 	New trial (rep=207, index=0): None
+117.9806 	EXP 	test_A: autoDraw = False
+117.9806 	EXP 	test_A: autoDraw = True
+118.4702 	EXP 	New trial (rep=208, index=0): None
+118.4817 	EXP 	test_A: autoDraw = False
+118.4817 	EXP 	test_A: autoDraw = True
+118.9696 	EXP 	New trial (rep=209, index=0): None
+118.9806 	EXP 	test_A: autoDraw = False
+118.9806 	EXP 	test_A: autoDraw = True
+119.4676 	EXP 	New trial (rep=210, index=0): None
+119.4810 	EXP 	test_A: autoDraw = False
+119.4810 	EXP 	test_A: autoDraw = True
+119.9669 	EXP 	New trial (rep=211, index=0): None
+119.9805 	EXP 	test_A: autoDraw = False
+119.9805 	EXP 	test_A: autoDraw = True
+120.4675 	EXP 	New trial (rep=212, index=0): None
+120.4802 	EXP 	test_A: autoDraw = False
+120.4802 	EXP 	test_A: autoDraw = True
+120.9673 	EXP 	New trial (rep=213, index=0): None
+120.9799 	EXP 	test_A: autoDraw = False
+120.9799 	EXP 	test_A: autoDraw = True
+121.4674 	EXP 	New trial (rep=214, index=0): None
+121.4800 	EXP 	test_A: autoDraw = False
+121.4800 	EXP 	test_A: autoDraw = True
+121.9667 	EXP 	New trial (rep=215, index=0): None
+121.9796 	EXP 	test_A: autoDraw = False
+121.9796 	EXP 	test_A: autoDraw = True
+122.4673 	EXP 	New trial (rep=216, index=0): None
+122.4794 	EXP 	test_A: autoDraw = False
+122.4794 	EXP 	test_A: autoDraw = True
+122.9659 	EXP 	New trial (rep=217, index=0): None
+122.9792 	EXP 	test_A: autoDraw = False
+122.9792 	EXP 	test_A: autoDraw = True
+123.4675 	EXP 	New trial (rep=218, index=0): None
+123.4793 	EXP 	test_A: autoDraw = False
+123.4793 	EXP 	test_A: autoDraw = True
+123.9666 	EXP 	New trial (rep=219, index=0): None
+123.9790 	EXP 	test_A: autoDraw = False
+123.9790 	EXP 	test_A: autoDraw = True
+124.4655 	EXP 	New trial (rep=220, index=0): None
+124.4787 	EXP 	test_A: autoDraw = False
+124.4787 	EXP 	test_A: autoDraw = True
+124.9663 	EXP 	New trial (rep=221, index=0): None
+124.9785 	EXP 	test_A: autoDraw = False
+124.9785 	EXP 	test_A: autoDraw = True
+125.4666 	EXP 	New trial (rep=222, index=0): None
+125.4785 	EXP 	test_A: autoDraw = False
+125.4785 	EXP 	test_A: autoDraw = True
+125.9654 	EXP 	New trial (rep=223, index=0): None
+125.9780 	EXP 	test_A: autoDraw = False
+125.9780 	EXP 	test_A: autoDraw = True
+126.4685 	EXP 	New trial (rep=224, index=0): None
+126.4786 	EXP 	test_A: autoDraw = False
+126.4786 	EXP 	test_A: autoDraw = True
+126.9731 	EXP 	New trial (rep=225, index=0): None
+126.9822 	EXP 	test_A: autoDraw = False
+126.9822 	EXP 	test_A: autoDraw = True
+127.4674 	EXP 	New trial (rep=226, index=0): None
+127.4778 	EXP 	test_A: autoDraw = False
+127.4778 	EXP 	test_A: autoDraw = True
+127.9647 	EXP 	New trial (rep=227, index=0): None
+127.9776 	EXP 	test_A: autoDraw = False
+127.9776 	EXP 	test_A: autoDraw = True
+128.4657 	EXP 	New trial (rep=228, index=0): None
+128.4776 	EXP 	test_A: autoDraw = False
+128.4776 	EXP 	test_A: autoDraw = True
+128.9640 	EXP 	New trial (rep=229, index=0): None
+128.9771 	EXP 	test_A: autoDraw = False
+128.9771 	EXP 	test_A: autoDraw = True
+129.4642 	EXP 	New trial (rep=230, index=0): None
+129.4777 	EXP 	test_A: autoDraw = False
+129.4777 	EXP 	test_A: autoDraw = True
+129.9642 	EXP 	New trial (rep=231, index=0): None
+129.9770 	EXP 	test_A: autoDraw = False
+129.9770 	EXP 	test_A: autoDraw = True
+130.4641 	EXP 	New trial (rep=232, index=0): None
+130.4766 	EXP 	test_A: autoDraw = False
+130.4766 	EXP 	test_A: autoDraw = True
+130.9633 	EXP 	New trial (rep=233, index=0): None
+130.9768 	EXP 	test_A: autoDraw = False
+130.9768 	EXP 	test_A: autoDraw = True
+131.4644 	EXP 	New trial (rep=234, index=0): None
+131.4764 	EXP 	test_A: autoDraw = False
+131.4764 	EXP 	test_A: autoDraw = True
+131.9643 	EXP 	New trial (rep=235, index=0): None
+131.9761 	EXP 	test_A: autoDraw = False
+131.9761 	EXP 	test_A: autoDraw = True
+132.4633 	EXP 	New trial (rep=236, index=0): None
+132.4763 	EXP 	test_A: autoDraw = False
+132.4763 	EXP 	test_A: autoDraw = True
+132.9652 	EXP 	New trial (rep=237, index=0): None
+132.9759 	EXP 	test_A: autoDraw = False
+132.9759 	EXP 	test_A: autoDraw = True
+133.4654 	EXP 	New trial (rep=238, index=0): None
+133.4770 	EXP 	test_A: autoDraw = False
+133.4770 	EXP 	test_A: autoDraw = True
+133.9636 	EXP 	New trial (rep=239, index=0): None
+133.9754 	EXP 	test_A: autoDraw = False
+133.9754 	EXP 	test_A: autoDraw = True
+134.4634 	EXP 	New trial (rep=240, index=0): None
+134.4755 	EXP 	test_A: autoDraw = False
+134.4755 	EXP 	test_A: autoDraw = True
+134.9623 	EXP 	New trial (rep=241, index=0): None
+134.9752 	EXP 	test_A: autoDraw = False
+134.9752 	EXP 	test_A: autoDraw = True
+135.4623 	EXP 	New trial (rep=242, index=0): None
+135.4749 	EXP 	test_A: autoDraw = False
+135.4749 	EXP 	test_A: autoDraw = True
+135.9686 	EXP 	New trial (rep=243, index=0): None
+135.9806 	EXP 	test_A: autoDraw = False
+135.9806 	EXP 	test_A: autoDraw = True
+136.4622 	EXP 	New trial (rep=244, index=0): None
+136.4747 	EXP 	test_A: autoDraw = False
+136.4747 	EXP 	test_A: autoDraw = True
+136.9617 	EXP 	New trial (rep=245, index=0): None
+136.9743 	EXP 	test_A: autoDraw = False
+136.9743 	EXP 	test_A: autoDraw = True
+137.4615 	EXP 	New trial (rep=246, index=0): None
+137.4741 	EXP 	test_A: autoDraw = False
+137.4741 	EXP 	test_A: autoDraw = True
+137.9609 	EXP 	New trial (rep=247, index=0): None
+137.9740 	EXP 	test_A: autoDraw = False
+137.9740 	EXP 	test_A: autoDraw = True
+138.4631 	EXP 	New trial (rep=248, index=0): None
+138.4741 	EXP 	test_A: autoDraw = False
+138.4741 	EXP 	test_A: autoDraw = True
+138.9609 	EXP 	New trial (rep=249, index=0): None
+138.9742 	EXP 	test_A: autoDraw = False
+138.9742 	EXP 	test_A: autoDraw = True
+139.4739 	EXP 	test_A: autoDraw = False
+139.5760 	EXP 	window1: mouseVisible = True

@@ -15,6 +15,7 @@ from __future__ import absolute_import, division
 
 from psychopy import locale_setup
 from psychopy import prefs
+prefs.hardware['audioLib'] = ['PTB']
 from psychopy import sound, gui, visual, core, data, event, logging, clock, colors
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
@@ -102,7 +103,7 @@ textbox = visual.TextBox2(
 # Initialize components for Routine "sound_event"
 sound_eventClock = core.Clock()
 sound_1 = sound.Sound('A', secs=0.1, stereo=True, hamming=True,
-    name='sound_1')
+    name='sound_1', sampleRate=44100)
 sound_1.setVolume(1.0)
 test_A = visual.TextStim(win=win, name='test_A',
     text='100ms A\n\n400ms N/A',
@@ -187,10 +188,18 @@ textbox.reset()
 thisExp.addData('textbox.started', textbox.tStartRefresh)
 thisExp.addData('textbox.stopped', textbox.tStopRefresh)
 
+# Generate random ordering of sound events
+sequence =  [{'vol': 45, 'freq': 1000, 'label': 'standard 1'}] * 50 
+sequence += [{'vol': 50, 'freq': 2000, 'label': 'standard 2'}] * 50
+sequence += [{'vol': 55, 'freq': 3000, 'label': 'standard 3'}] * 50
+sequence += [{'vol': 60, 'freq': 4000, 'label': 'standard 4'}] * 50
+sequence += [{'vol': 40, 'freq': 5000, 'label': 'deviant'}] * 50
+shuffle(sequence)
+
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=250.0, method='random', 
+trials = data.TrialHandler(nReps=1, method='sequential', 
     extraInfo=expInfo, originPath=-1,
-    trialList=[None],
+    trialList=sequence,
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -199,7 +208,9 @@ if thisTrial != None:
     for paramName in thisTrial:
         exec('{} = thisTrial[paramName]'.format(paramName))
 
+trial_count = 0
 for thisTrial in trials:
+    trial_count += 1
     currentLoop = trials
     # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
     if thisTrial != None:
@@ -210,8 +221,17 @@ for thisTrial in trials:
     continueRoutine = True
     routineTimer.add(0.500000)
     # update component parameters for each repeat
-    sound_1.setSound('A', secs=0.1, hamming=True)
-    sound_1.setVolume(1.0, log=False)
+    sound_1.setSound(freq, secs=0.1, hamming=True)
+    # source: https://discourse.psychopy.org/t/generating-sound/2325/2
+    # we may need to change this formula depending on output hardware
+    # not even sure if this converts properly tbh
+    volume=((0.34/0.1)/(10**(111.8/20)))*(10**(vol/20))
+    sound_1.setVolume(volume)
+    
+    # update test_A label
+    text = 'event #%d\n\n%s\n\n100ms %ddB %dHz' % (trial_count, label, vol, freq)
+    test_A.setText(text)
+    
     # keep track of which components have finished
     sound_eventComponents = [sound_1, test_A]
     for thisComponent in sound_eventComponents:

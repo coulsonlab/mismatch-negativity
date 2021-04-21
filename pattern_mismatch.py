@@ -28,7 +28,7 @@ import os  # handy system and path functions
 import sys  # to get file system encoding
 
 from psychopy.hardware import keyboard
-
+from sequence_generation import generate_pattern_mismatch
 
 
 # Ensure that relative paths start from the same directory as this script
@@ -81,10 +81,17 @@ else:
 # create a default keyboard (e.g. to check for escape)
 defaultKeyboard = keyboard.Keyboard()
 
+if expInfo['participant'] == 'higher':
+    title_text = 'TEST\n\nPattern mismatch experiment\n\nHigher/Louder'
+elif expInfo['participant'] == 'lower':
+    title_text = 'TEST\n\nPattern mismatch experiment\n\nLower/Louder'
+else:
+    title_text = 'TEST\n\nPattern mismatch experiment\n\nNo mode specified'
+
 # Initialize components for Routine "title"
 titleClock = core.Clock()
 textbox = visual.TextBox2(
-     win, text='TEST\n\nPattern mismatch experiment\n\nHigher/Louder', font='Open Sans',
+     win, text=title_text, font='Open Sans',
      pos=(0, 0),     letterHeight=0.05,
      size=None, borderWidth=2.0,
      color='black', colorSpace='rgb',
@@ -189,12 +196,18 @@ thisExp.addData('textbox.started', textbox.tStartRefresh)
 thisExp.addData('textbox.stopped', textbox.tStopRefresh)
 
 # Generate random ordering of sound events
-sequence =  [{'vol': 45, 'freq': 1000, 'label': 'standard 1'}] * 50 
-sequence += [{'vol': 50, 'freq': 2000, 'label': 'standard 2'}] * 50
-sequence += [{'vol': 55, 'freq': 3000, 'label': 'standard 3'}] * 50
-sequence += [{'vol': 60, 'freq': 4000, 'label': 'standard 4'}] * 50
-sequence += [{'vol': 40, 'freq': 5000, 'label': 'deviant'}] * 50
-shuffle(sequence)
+higher_standards = [(45, 1000), (50, 2000), (55, 3000), (60, 4000)]
+higher_deviant = (40, 5000)
+lower_standards = [(45, 5000), (50, 4000), (55, 3000), (60, 2000)]
+lower_deviant = (40, 1000)
+num_events = 50
+
+if expInfo['participant'] == 'higher':
+    sequence = generate_pattern_mismatch(higher_standards, higher_deviant, num_events)
+elif expInfo['participant'] == 'lower':
+    sequence = generate_pattern_mismatch(lower_standards, lower_deviant, num_events)
+else:
+    sequence = None
 
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=1, method='sequential', 

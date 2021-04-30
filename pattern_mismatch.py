@@ -234,7 +234,12 @@ for thisTrial in trials:
     continueRoutine = True
     routineTimer.add(0.500000)
     # update component parameters for each repeat
-    sound_1.setSound(freq, secs=0.1, hamming=True)
+    if filename is not None:
+        sound_1.setSound(filename, secs=0.1, hamming=True)
+        text = 'event #%d\n\n%s\n\n100ms %s' % (trial_count, label, filename)
+    else:
+        sound_1.setSound(freq, secs=0.1, hamming=True)
+        text = 'event #%d\n\n%s\n\n100ms %ddB %dHz' % (trial_count, label, vol, freq)
     # source: https://discourse.psychopy.org/t/generating-sound/2325/2
     # we may need to change this formula depending on output hardware
     # not even sure if this converts properly tbh
@@ -242,7 +247,7 @@ for thisTrial in trials:
     sound_1.setVolume(volume)
     
     # update test_A label
-    text = 'event #%d\n\n%s\n\n100ms %ddB %dHz' % (trial_count, label, vol, freq)
+    
     test_A.setText(text)
     
     # keep track of which components have finished

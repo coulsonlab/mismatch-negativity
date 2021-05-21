@@ -1,14 +1,3 @@
-@@ -0,0 +1,109 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on April 19, 2021, at 16:23
-If you publish work using this script the most relevant publication is:
-    Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
-        PsychoPy2: Experiments in behavior made easy Behav Res 51: 195. 
-        https://doi.org/10.3758/s13428-018-01193-y
-"""
 from __future__ import absolute_import, division
 from psychopy import locale_setup
 from psychopy import prefs
@@ -44,10 +33,6 @@ expInfo['psychopyVersion'] = psychopyVersion
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
 filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])
 
-# save a log file for detail verbose info
-logFile = logging.LogFile(filename+'.log', level=logging.EXP)
-logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
-
 endExpNow = False  # flag for 'escape' or other condition => quit the exp
 frameTolerance = 0.001  # how close to onset before 'same' frame
 
@@ -68,43 +53,75 @@ else:
 # create a default keyboard (e.g. to check for escape)
 defaultKeyboard = keyboard.Keyboard()
 
+# Create a timer
+timer = core.Clock()
+
 # Create our list of sound file names and shuffle them
 sequence = ['TB20hz5min.wav', 'TB30hz5min.wav', 'TB40hz5min.wav', 'TB50hz5min.wav', 'TB80hz5min.wav']
 random.shuffle(sequence)
+sequence_order = []
+sequence_timings = []
+
+test_info = ('The sounds will play in the following sequence: \n\n' + 
+sequence[0][0:6] + ', ' + sequence[1][0:6] + ', ' + sequence[2][0:6] + ', ' + 
+sequence[3][0:6] + ', ' + sequence[4][0:6] + '\n\n Press any key to begin.')
+
+instruct = visual.TextStim(win, text = test_info, height = 0.06)
+instruct.draw()
+win.flip()
+key_press = False
+while not key_press:
+    key_press = event.waitKeys()
+win.flip()
 
 for file in sequence:
-    sound_file_name = 'ASSR_Sound/' + file
-    counter = 0
-    sound_1 = sound.Sound(sound_file_name, stereo=True, hamming=False)
+    # Load the sound and set the volume
+    sound_1 = sound.Sound('ASSR_Sound/' + file, stereo=True, hamming=False)
     sound_1.setVolume(1.0)
     
-    display_text = 'Sound File: ' + file
+    # Tell the experimenter what sound is playing
+    display_text = 'Sound File: ' + file + '\n\n Press any key to quit.'
     test_A = visual.TextStim(win=win,
                              text=display_text,
                              pos=(0, 0), height=0.1, 
                              color='black')
     test_A.draw()
     win.flip()
-    wait_time = sound_1.getDuration()
     
-    now = ptb.GetSecs()
-    sound_1.play(when=now)
+    # Wait 1 second before starting so no keys are accidentally pressed
+    core.wait(1)
     
-    core.wait(wait_time) # Allows the sound to play, then waits 2 seconds before looping
+    wait_time = sound_1.getDuration() # Get the duration time
+    now = ptb.GetSecs() # Get the onset time
+    sound_1.play(when=now) # Play immediately
+    sequence_timings.append(now) # Record the onset time
+    sequence_order.append(file[:6]) # Record the order of sounds
+    
+    # Wait until the sound is done or 'Esc' is pressed
+    key_press = False
+    end_exp = False
+    while not key_press:
+        key_press = event.waitKeys(maxWait = (wait_time))
+        if key_press:
+            sound_1.stop()
+            df = pd.DataFrame(data = {'Sequence Order': sequence_order, 'Sequence Timing': sequence_timings})
+            df.to_csv(filename + '.csv')
+            win.close()
+            core.quit()
+            
+    # 2 second pause between trials
     core.wait(2)
 
 print('All done!')
     
 # Save the sequence that was played in a CSV file
-df = pd.DataFrame(data = {'Sequence Order': sequence})
+df = pd.DataFrame(data = {'Sequence Order': sequence_order, 'Sequence Timing': sequence_timings})
 df.to_csv(filename + '.csv')
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting
 win.flip()
 
-# these shouldn't be strictly necessary (should auto-save)
-logging.flush()
 # make sure everything is closed down
 win.close()
 core.quit()

@@ -1,6 +1,6 @@
 from numpy.random import shuffle
 
-def generate_pattern_mismatch(standards, deviant, num_events=50):
+def generate_frequency_mismatch(standards, deviant, num_events=50):
     """
     Generates a randomized sequence of standard and deviant sound events. Each
     sound event (standard or deviant) has the same frequency of presentation.

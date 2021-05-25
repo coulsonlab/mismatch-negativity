@@ -5,7 +5,7 @@ import serial
 port = serial.Serial("COM3", baudrate=115200)
 
 #send the trigger code
-port.write(b'SOME_NUMBER')
+port.write(TRIGGER) # TRIGGER can be binary (b'0-255') or a string
 port.flush()
 
 

@@ -14,6 +14,7 @@ import os  # handy system and path functions
 import sys  # to get file system encoding
 from psychopy.hardware import keyboard
 import psychtoolbox as ptb # for GetSecs
+import serial
 
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
@@ -56,15 +57,19 @@ defaultKeyboard = keyboard.Keyboard()
 # Create a timer
 timer = core.Clock()
 
+# Create the serial port
+port = serial.Serial("COM3", baudrate=115200)
+
 # Create our list of sound file names and shuffle them
-sequence = ['TB20hz5min.wav', 'TB30hz5min.wav', 'TB40hz5min.wav', 'TB50hz5min.wav', 'TB80hz5min.wav']
+#sequence = ['TB20hz5min.wav', 'TB30hz5min.wav', 'TB40hz5min.wav', 'TB50hz5min.wav', 'TB80hz5min.wav']
+sequence = ['TB20hz.wav', 'TB30hz.wav', 'TB40hz.wav', 'TB50hz.wav', 'TB80hz.wav']
 random.shuffle(sequence)
 sequence_order = []
 sequence_timings = []
 
 test_info = ('The sounds will play in the following sequence: \n\n' + 
-sequence[0][0:6] + ', ' + sequence[1][0:6] + ', ' + sequence[2][0:6] + ', ' + 
-sequence[3][0:6] + ', ' + sequence[4][0:6] + '\n\n Press any key to begin.')
+sequence[0][0:-4] + ', ' + sequence[1][0:-4] + ', ' + sequence[2][0:-4] + ', ' + 
+sequence[3][0:-4] + ', ' + sequence[4][0:-4] + '\n\n Press any key to begin.')
 
 instruct = visual.TextStim(win, text = test_info, height = 0.06)
 instruct.draw()
@@ -90,8 +95,11 @@ for file in sequence:
     
     # Wait 1 second before starting so no keys are accidentally pressed
     core.wait(1)
-    
     wait_time = sound_1.getDuration() # Get the duration time
+    
+    timer.reset()
+    port.write(file[2:4])
+    port.flush()
     now = ptb.GetSecs() # Get the onset time
     sound_1.play(when=now) # Play immediately
     sequence_timings.append(now) # Record the onset time
@@ -100,15 +108,16 @@ for file in sequence:
     # Wait until the sound is done or 'Esc' is pressed
     key_press = False
     end_exp = False
-    while not key_press:
-        key_press = event.waitKeys(maxWait = (wait_time))
+    run_time = timer.getTime()
+    while run_time <= wait_time and not key_press:
+        key_press = event.waitKeys(maxWait = wait_time)
         if key_press:
             sound_1.stop()
             df = pd.DataFrame(data = {'Sequence Order': sequence_order, 'Sequence Timing': sequence_timings})
             df.to_csv(filename + '.csv')
             win.close()
             core.quit()
-            
+        run_time = timer.getTime()
     # 2 second pause between trials
     core.wait(2)
 

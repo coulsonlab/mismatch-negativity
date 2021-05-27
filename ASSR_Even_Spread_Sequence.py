@@ -61,8 +61,16 @@ timer = core.Clock()
 port = serial.Serial("COM3", baudrate=115200)
 
 # Create our list of sound file names and shuffle them
-#sequence = ['TB20hz5min.wav', 'TB30hz5min.wav', 'TB40hz5min.wav', 'TB50hz5min.wav', 'TB80hz5min.wav']
-sequence = ['TB20hz.wav', 'TB30hz.wav', 'TB40hz.wav', 'TB50hz.wav', 'TB80hz.wav']
+# 5 minute version:
+sequence = ['TB20hz5min.wav', 'TB30hz5min.wav', 'TB40hz5min.wav', 'TB50hz5min.wav', 'TB80hz5min.wav']
+trigger_codes = {'TB20hz5min.wav': b'\x14', 'TB30hz5min.wav': b'\x1E', 'TB40hz5min.wav': b'\x28', 
+'TB50hz5min.wav': b'\x32', 'TB80hz5min.wav': b'\x50'}
+
+# 20 second version:
+#sequence = ['TB20hz.wav', 'TB30hz.wav', 'TB40hz.wav', 'TB50hz.wav', 'TB80hz.wav']
+#trigger_codes = {'TB20hz.wav': b'\x14', 'TB30hz.wav': b'\x1E', 'TB40hz.wav': b'\x28', 
+#'TB50hz.wav': b'\x32', 'TB80hz.wav': b'\x50'}
+
 random.shuffle(sequence)
 sequence_order = []
 sequence_timings = []
@@ -98,7 +106,7 @@ for file in sequence:
     wait_time = sound_1.getDuration() # Get the duration time
     
     timer.reset()
-    port.write(file[2:4])
+    port.write(trigger_codes[file])
     port.flush()
     now = ptb.GetSecs() # Get the onset time
     sound_1.play(when=now) # Play immediately
